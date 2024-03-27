@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
+    <!--Bootstrap 5-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
+<body style="background-color: black;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/img/viajes.svg" alt="Icono" width="30" height="24">Viajes Chile</a>
+        <div class="container-fluid"style="background-color:lightskyblue;">
+          <a class="navbar-brand d-flex justify-content-center" href="#">
+            <img src="./assets/img/viajes.svg" alt="Icono" width="30" height="24"><h3 class="text-white d-inline" id="h3" data-bs-toggle="tooltip" data-bs-placement="top" title="¿Quieres viajar?">Viajes Chile</h3></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link "href="#">Inicio</a>
-              <a class="nav-link" href="#">Quienes Somos</a>
-              <a class="nav-link" href="#">Destacados</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link text-white" href="#h3">Inicio</a>
+              <a class="nav-link text-white" href="#sec1">Quienes Somos</a>
+              <a class="nav-link text-white" href="#sec2">Destacados</a>
+              <a class="nav-link text-white" href="#sec3">Contacto</a>
             </div>
           </div>
         </div>
@@ -48,46 +51,46 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <presentacion>
-        <h3 class="text-center">Quienes somos?</h3>
+      <presentacion class="d-none d-md-block">
+        <h3 class="text-center text-white m-5" id="sec1">¿Quienes somos?<a href="#h3"><i class="fa-solid fa-house mx-5"></i></a></i></h3>
         <hr>
         <div class="container text-center">
             <div class="row">
               <div class="col">
-                <i class="fa-solid fa-plane"></i>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis minima, inventore dolores nesciunt quisquam consectetur veniam vel, perferendis recusandae harum, fugiat illum qui totam esse sed magni. Enim, ullam ex.</p>
+                <div class="bg-info"><i class="fa-solid fa-plane"></i></div>
+                <p class="text-white">Disfruta de los vuelos más cómodos y seguros hacia tus sueños más salvajes y fascinantes, con nuestro equipo de expertos en viajes que garantizan una experiencia inolvidable.</p>
               </div>
               <div class="col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse deserunt atque velit voluptate necessitatibus cum placeat? Quos non nam voluptatum voluptatibus necessitatibus ducimus ipsam ullam illo, dolor, dolorem quisquam?</p>
-                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p class="text-white">Descubre destinos mágicos y extraordinarios con nuestra agencia de viajes, desde los exuberantes bosques encantados hasta las antiguas ciudades perdidas en las nubes.</p>
+                <div class="bg-info"><i class="fa-solid fa-triangle-exclamation"></i></div>
               </div>
               <div class="col">
-                <i class="fa-solid fa-route"></i>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis inventore officia sunt voluptatum cupiditate est debitis labore incidunt! Iure repellat illo laborum id reiciendis modi corrupti libero odit aliquid non.</p>
+                <div class="bg-info"><i class="fa-solid fa-route"></i></div>
+                <p class="text-white">Explora rutas secretas y rincones ocultos que solo nuestra agencia conoce, llevándote a aventuras únicas y emocionantes donde la magia y el misterio se entrelazan.</p>
               </div>
             </div>
           </div>
       </presentacion>
       <destacados>
-        <h3 class="text-center">Destacados</h3>
+        <h3 class="text-center text-white m-5" id="sec2">Destacados<a href="#h3"><i class="fa-solid fa-house mx-5"></i></a></h3>
         <hr>
         <div class="container-fluid text-center">
           <div class="row">
             <div class="col">
               <div class="card" style="width: 18rem;">
                 <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Patagonia indomita</h5>
-                  <p class="card-text">En la Patagonia Embrujada, los picos nevados cantan melodías ancestrales al viento, mientras los ríos susurran antiguos hechizos entre sus cañones de piedra. En la oscuridad de la noche, las estrellas bailan al ritmo de las auroras boreales, tejiendo sueños y misterios en el cielo infinito.</p>
+                <div class="card-body bg-info">
+                  <h5 class="card-title text-white">Patagonia indomita</h5>
+                  <p class="card-text text-white" >En la Patagonia Embrujada, los picos nevados cantan melodías ancestrales al viento, mientras los ríos susurran antiguos hechizos entre sus cañones de piedra. En la oscuridad de la noche, las estrellas bailan al ritmo de las auroras boreales, tejiendo sueños y misterios en el cielo infinito.</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card" style="width: 18rem;">
                 <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Reflejo infinito</h5>
-                  <p class="card-text">
+                <div class="card-body bg-info">
+                  <h5 class="card-title text-white">Reflejo infinito</h5>
+                  <p class="card-text text-white">
                     En el corazón del Desierto Encantado, un lago de aguas cristalinas refleja los sueños perdidos de los viajeros. Sus orillas están custodiadas por árboles de cristal que susurran secretos olvidados al viento del crepúsculo.</p>
                 </div>
               </div>
@@ -95,9 +98,9 @@
             <div class="col">
               <div class="card" style="width: 18rem;">
                 <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Flamengo de paso</h5>
-                  <p class="card-text">
+                <div class="card-body bg-info">
+                  <h5 class="card-title text-white">Flamengo de paso</h5>
+                  <p class="card-text text-white">
                     En el Salar de Atacama, un flamenco llamado Aurora danza entre los reflejos dorados, pintando el cielo con su grácil vuelo. Sus plumas rosadas se mezclan con la magia del desierto, creando un espectáculo celestial.</p>
                 </div>
               </div>
@@ -105,9 +108,9 @@
             <div class="col">
               <div class="card" style="width: 18rem;">
                 <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Selva Valdiviana</h5>
-                  <p class="card-text">En la mágica Selva Valdiviana, los árboles susurran secretos ancestrales, las criaturas fantásticas danzan entre la frondosidad y los ríos cantan melodías encantadas. Un reino de maravillas donde la naturaleza y la magia convergen en un espectáculo eterno</p>
+                <div class="card-body bg-info">
+                  <h5 class="card-title text-white">Selva Valdiviana</h5>
+                  <p class="card-text text-white">En la mágica Selva Valdiviana, los árboles susurran secretos ancestrales, las criaturas fantásticas danzan entre la frondosidad y los ríos cantan melodías encantadas. Un reino de maravillas donde la naturaleza y la magia convergen en un espectáculo eterno</p>
                 </div>
               </div>
             </div>
@@ -116,34 +119,42 @@
 
       </destacados>
       <formulario>
-        <h3 class="text-center">Contacto</h3>
+        <h3 class="text-center text-white m-5" id="sec3">Contacto<a href="#h3"><i class="fa-solid fa-house mx-5"></i></a></h3>
         <hr>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mi nombre">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+          <label for="exampleFormControlInput1" class="form-label text-white">Asunto</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1 text-white" placeholder="Asunto">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-info">Enviar</button>
+        <button type="button" class="btn btn-info m-1 text-white">Enviar</button>
       </formulario>
-      <footer class="conatiner d-flex justify-content-center">
-        <h2>Viajes Chile</h2> <div class="m-auto"><i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-square-twitter"></i><i class="fa-brands fa-square-facebook"></i></div>
+      <footer class="conatiner d-flex justify-content-center bg-info">
+        <h2 class="text-white">Viajes Chile</h2> <div class="m-auto"><i class="fa-brands fa-github bg-white"></i><i class="fa-brands fa-linkedin bg-white m-1"></i><i class="fa-brands fa-square-twitter bg-white m-1"></i><i class="fa-brands fa-square-facebook bg-white"></i></div>
       </footer>
     
-
+<!--Bootstrap 5 popper-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
  crossorigin="anonymous"></script>
+ <!--Bootstrap Js-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
   integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
   crossorigin="anonymous"></script>
+  <!--Bootstrap FontAwesome-->
   <script src="https://kit.fontawesome.com/d058062795.js" 
   crossorigin="anonymous"></script>
+  <!--Tooltip JQuery-->
+  <script>
+    $(document).ready(function(){
+        $('#h3').tooltip();
+    });
+</script>
 </body>
 </html>
